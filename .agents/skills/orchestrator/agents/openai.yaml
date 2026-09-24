@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrator"
+  short_description: "Routes work to the fewest skill files"
+  default_prompt: "Use $orchestrator first. Load only the skill files it names. Do not spend tokens on unused skills or references."

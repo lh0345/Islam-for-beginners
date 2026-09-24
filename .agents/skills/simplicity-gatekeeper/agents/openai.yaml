@@ -1,0 +1,6 @@
+interface:
+  display_name: "Simplicity Gatekeeper"
+  short_description: "Anti-bloat and 20-test budget"
+  default_prompt: "Use $orchestrator first, then $simplicity-gatekeeper only if named. Add nothing that fails the gates. Stay inside the test budget."
+policy:
+  allow_implicit_invocation: false

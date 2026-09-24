@@ -3,24 +3,57 @@
     "name": "Islam, Simply",
     "slug": "islam-simply",
     "version": "1.0.0",
+    "scheme": "islam-simply",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-icon-v2.png",
     "userInterfaceStyle": "light",
     "backgroundColor": "#F6F1E8",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.islamsimply.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.islamsimply.app",
       "adaptiveIcon": {
         "backgroundColor": "#F6F1E8",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/app-icon-foreground-v2.png",
+        "monochromeImage": "./assets/app-icon-foreground-v2.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/app-icon-v2.png"
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/app-icon-foreground-v2.png",
+          "color": "#174D3A",
+          "defaultChannel": "learning-reminders"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/app-icon-foreground-v2.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#F6F1E8"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "afde0a26-8805-4f89-a076-4cc2dfbaa5e6"
+      }
+    },
+    "owner": "coachmaximus"
   }
 }
