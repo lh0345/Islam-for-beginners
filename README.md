@@ -60,4 +60,4 @@ Before redistributing or publishing the app, verify the licenses and attribution
 
 ## License
 
-A repository license has not been selected yet. Until a license is added, people may view and discuss the source, but they do not automatically have permission to reuse, modify, or redistribute it. A license should be added before presenting the project as formally open source.
+MIT
